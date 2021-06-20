@@ -1,7 +1,6 @@
 fun main() {
     //print 1 to 100
      printOneToHundred()
-    printOneToHundred1()
 
   //to reverse a string
     var string = "Good food"
@@ -16,26 +15,14 @@ fun main() {
 fun printOneToHundred() {
     var a: Int = 0
     for (a in 1..100) {
-        if (a % 3 == 0) {
+        if(a%15==0){
+            print("FizzBuzz \n")
+            continue
+        }else if(a % 3 == 0) {
             print("Fizz \n")
             continue
         } else if (a % 5 == 0) {
-                print("Buzz \n")
-                continue
-        }else if ((a % 3==0) && (a % 5 == 0)) {
-            print("FizzBuzz \n")
-            continue
-        }
-        println(a)
-    }
-    a++
-}
-
-fun printOneToHundred1() {
-    var a: Int = 0
-    for (a in 1..20) {
-      if ((a % 3==0) && (a % 5 == 0)) {
-            print("FizzBuzz \n")
+            print("Buzz \n")
             continue
         }
         println(a)
