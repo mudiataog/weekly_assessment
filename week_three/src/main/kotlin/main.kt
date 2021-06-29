@@ -1,11 +1,18 @@
 fun main() {
     //print 1 to 100
-     printOneToHundred()
+     //printOneToHundred()
 
   //to reverse a string
     var string = "Good food"
-    println(reverseString(string))
+    //println(reverseString(string))
 
+    var print = evenlySpaceNumber(4,6,3)
+    println(print)
+}
+
+fun evenlySpaceNumber(a:Int, b:Int, c:Int) :Boolean{
+
+    return (a - b == b - c) || (a - c == c - b) || (a - b == c - a)
 }
 
 /*Write a short program that prints each number from 1 to 100 on a new line.
